@@ -125,18 +125,6 @@ Here is a list of users with a different type of functionality:<br/>
 
 
 
-
-
-
-
-1. Insert board size and number of mines
-
-   ![Start](images/StartScreen.png)
-
-2. Press on Reset button and play
-
-   ![Play](images/PlayScreen.png)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 

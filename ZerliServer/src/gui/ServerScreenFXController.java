@@ -175,7 +175,8 @@ public class ServerScreenFXController {
 		if (msg.getAnswer() == Answer.SUCCEED) {
 			connectButton.setDisable(true);
 			disconnectButton.setDisable(false);
-			importUsersButton.setDisable(isImportButtonClicked);
+			//TODO: Fix import external users will include also account_id
+			//importUsersButton.setDisable(isImportButtonClicked);
 
 			if (zerliCommunincation == null)
 				zerliCommunincation = new ZerliServerCommunication(Integer.parseInt(portTextField.getText()));

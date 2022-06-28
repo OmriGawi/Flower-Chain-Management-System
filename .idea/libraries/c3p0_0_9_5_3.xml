@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.5.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/c3p0-0.9.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/quartz-2.4.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/quartz-jobs-2.4.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/slf4j-api-1.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/slf4j-log4j12-1.7.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

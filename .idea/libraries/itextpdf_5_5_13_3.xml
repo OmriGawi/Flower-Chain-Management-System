@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="itextpdf-5.5.13.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/itextpdf-5.5.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ZerliServer/lib/pdfbox-2.0.24.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

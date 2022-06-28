@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.report.orders.OrderMonthlyScreenFXController">
+   <children>
+      <Label layoutX="332.0" layoutY="14.0" text="Order Report" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthLabel" layoutX="146.0" layoutY="632.0" text="Month">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="61.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="yearLabel" layoutX="146.0" layoutY="665.0" text="Year">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="126.0" layoutY="66.0" prefHeight="362.0" prefWidth="575.0" />
+      <ImageView fx:id="itemImage" fitHeight="144.0" fitWidth="163.0" layoutX="315.0" layoutY="508.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="347.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Seller Item !" wrappingWidth="134.365234375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="299.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/bestSellerItem.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="494.0" layoutY="548.0" spacing="25.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="569.0" layoutY="549.0" spacing="25.0">
+         <children>
+            <Label fx:id="itemNameLabel" text="Label">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemPriceLabel" text="Label">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Text layoutX="61.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="storeIdLabel" layoutX="146.0" layoutY="598.0" text="ID">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

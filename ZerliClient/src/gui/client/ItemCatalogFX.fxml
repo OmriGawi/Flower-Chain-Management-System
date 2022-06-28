@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="178.0" styleClass="catalogItem" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.client.ItemCatalogFXController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <ImageView fx:id="itemImage" fitHeight="158.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/flowers/flower.png" />
+         </image>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="166.0">
+         <children>
+            <Text fx:id="itemNameText" fill="#365421" text="Purple Lady" textAlignment="CENTER" wrappingWidth="165.95703125">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemPriceText" fill="#365421d9" text="150.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="amountText" strokeType="OUTSIDE" strokeWidth="0.0" text="1 selected" visible="false" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

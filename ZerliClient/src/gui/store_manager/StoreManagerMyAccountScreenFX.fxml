@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.store_manager.StoreManagerMyAccountScreenFXController">
+   <children>
+      <VBox layoutX="253.0" layoutY="454.0" spacing="35.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Manager ID:">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store Name:">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store Address:">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="414.0" layoutY="455.0" prefHeight="124.0" prefWidth="236.0" spacing="35.0">
+         <children>
+            <Label fx:id="managerIdLabel" alignment="CENTER" prefHeight="18.0" prefWidth="182.0" text="Manager ID">
+               <font>
+                  <Font name="Consolas Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="storeIdLabel" alignment="CENTER" prefHeight="18.0" prefWidth="199.0" text="Store ID">
+               <font>
+                  <Font name="Consolas Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="storeNameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="232.0" text="Store Name">
+               <font>
+                  <Font name="Consolas Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="storeAddressLabel" alignment="CENTER" prefHeight="18.0" prefWidth="232.0" text="Store Address">
+               <font>
+                  <Font name="Consolas Bold Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="519.0" layoutY="69.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/userMyAccount.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="accountRoleLabel" alignment="CENTER" text="Role">
+               <font>
+                  <Font name="Consolas Bold Italic" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="340.0" layoutY="21.0" text="My Account" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Text layoutX="348.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Details:" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <VBox alignment="CENTER" layoutX="41.12841796875" layoutY="102.55029296875" spacing="15.0">
+         <children>
+            <Text fill="#35973d" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
+               <font>
+                  <Font name="Consolas Bold" size="41.0" />
+               </font>
+            </Text>
+            <Label fx:id="firstNameLabel" alignment="CENTER" text="first name">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastNameLabel" alignment="CENTER" text="last name">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" alignment="CENTER" prefHeight="17.0" prefWidth="179.0" text="email">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" alignment="CENTER" text="phone number">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="406.0" layoutX="384.0" layoutY="369.0" startX="-347.0" />
+   </children>
+</fx:root>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.report.complaints.ComplaintMonthlyTwoStoresScreenFXController">
+    <children>
+        <Label layoutX="295.0" layoutY="14.0" text="Complaint Reports" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="27.0" />
+            </font>
+        </Label>
+        <BarChart fx:id="barChart1" layoutX="-1.0" layoutY="79.0" prefHeight="284.0" prefWidth="689.0" title="Complaints per day of a month">
+            <xAxis>
+                <CategoryAxis label="Day in month" side="BOTTOM" fx:id="xAxis1" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis1" label="Numbers of complaints" minorTickCount="3" side="LEFT" tickLabelGap="15.0">
+                    <tickLabelFont>
+                        <Font name="System Bold Italic" size="13.0" />
+                    </tickLabelFont></NumberAxis>
+            </yAxis>
+        </BarChart>
+        <Label fx:id="monthLabel1" layoutX="763.0" layoutY="214.0" text="Month">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="689.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="689.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="yearLabel1" layoutX="763.0" layoutY="247.0" text="Year">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="689.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="storeIdLabel1" layoutX="763.0" layoutY="179.0" text="ID">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store 1:" underline="true">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <BarChart fx:id="barChart2" layoutX="3.0" layoutY="398.0" prefHeight="284.0" prefWidth="689.0" title="Complaints per day of a month">
+            <xAxis>
+                <CategoryAxis label="Day in month" side="BOTTOM" fx:id="xAxis2" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis2" label="Numbers of complaints" minorTickCount="3" side="LEFT" tickLabelGap="15.0">
+                    <tickLabelFont>
+                        <Font name="System Bold Italic" size="13.0" />
+                    </tickLabelFont>
+                </NumberAxis>
+            </yAxis>
+        </BarChart>
+        <Label fx:id="monthLabel2" layoutX="767.0" layoutY="533.0" text="Month">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="693.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="693.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="yearLabel2" layoutX="767.0" layoutY="566.0" text="Year">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="693.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="storeIdLabel2" layoutX="767.0" layoutY="498.0" text="ID">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="18.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store 2:" underline="true">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Line endX="419.0" layoutX="396.0" layoutY="367.0" startX="-385.0" />
+    </children>
+</fx:root>

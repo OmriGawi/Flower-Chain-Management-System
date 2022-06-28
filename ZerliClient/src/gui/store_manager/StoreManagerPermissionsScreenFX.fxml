@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.store_manager.StoreManagerPermissionsScreenFXController">
+   <children>
+      <Label layoutX="258.0" layoutY="14.0" text="Permission Management" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="workersTableView" editable="true" layoutX="11.0" layoutY="71.0" prefHeight="584.0" prefWidth="805.0" styleClass="transparent" stylesheets="@../../css/style.css">
+         <columns>
+            <TableColumn fx:id="workerIdCol" prefWidth="154.0" style="-fx-alignment: CENTER;" text="Worker ID" />
+            <TableColumn fx:id="workerFirstNameCol" minWidth="0.0" prefWidth="266.0" style="-fx-alignment: CENTER;" text="First Name" />
+            <TableColumn fx:id="workerLastNameCol" minWidth="0.0" prefWidth="266.0" style="-fx-alignment: CENTER;" text="Last Name" />
+            <TableColumn fx:id="isAllowedToFillSurveysCol" prefWidth="182.0" style="-fx-alignment: CENTER;" text="Allowed to Fill Surveys" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</fx:root>

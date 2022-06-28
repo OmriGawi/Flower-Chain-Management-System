@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ZerliClient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ZerliClient_jar</output-path>
+    <root id="archive" name="ZerliClient.jar">
+      <element id="module-output" name="ZerliClient" />
+      <element id="module-output" name="Common" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/activation.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

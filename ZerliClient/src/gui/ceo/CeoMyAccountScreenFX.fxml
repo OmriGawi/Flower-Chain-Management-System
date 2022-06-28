@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.ceo.CeoMyAccountScreenFXController">
+   <children>
+      <VBox alignment="CENTER" layoutX="519.0" layoutY="69.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/userMyAccount.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="accountRoleLabel" alignment="CENTER" text="Role">
+               <font>
+                  <Font name="Consolas Bold Italic" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="340.0" layoutY="21.0" text="My Account" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="41.12841796875" layoutY="102.55029296875" spacing="15.0">
+         <children>
+            <Text fill="#35973d" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
+               <font>
+                  <Font name="Consolas Bold" size="41.0" />
+               </font>
+            </Text>
+            <Label fx:id="firstNameLabel" alignment="CENTER" text="first name">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastNameLabel" alignment="CENTER" text="last name">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" alignment="CENTER" prefHeight="22.0" prefWidth="293.0" text="email">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" alignment="CENTER" text="phone number">
+               <font>
+                  <Font name="Consolas Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="406.0" layoutX="384.0" layoutY="369.0" startX="-347.0" />
+   </children>
+</fx:root>

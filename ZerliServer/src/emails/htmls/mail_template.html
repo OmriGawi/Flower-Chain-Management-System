@@ -1,0 +1,157 @@
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+</head><body>
+<table style="
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    border-spacing: 0;
+    background: #ffffff;
+  " role="presentation">
+  <tbody>
+  <tr>
+    <td style="padding: 0" align="center">
+      <table style="
+            width: 602px;
+            border-collapse: collapse;
+            border: 1px solid #cccccc;
+            border-spacing: 0;
+            text-align: left;
+          " role="presentation">
+        <tbody>
+        <tr>
+          <td style="padding: 40px 0 30px 0; background: #69b33d" align="center">
+            <img style="height: auto; display: block" src="https://i.ibb.co/YTbYXvR/email-logo.png" alt="" width="300">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 36px 30px 0px 30px">
+            <table style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 0;
+                    border-spacing: 0;
+                  " role="presentation">
+              <tbody>
+              <tr>
+                <td style="padding: 0 0 36px 0; color: #153643">
+                  <h1 style="
+                            font-size: 24px;
+                            margin: 0 0 20px 0;
+                            font-family: Arial, sans-serif;
+                          ">
+                    TITLE_TEXT
+                  </h1>
+                  <p style="
+                            margin: 0 0 30px 0;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-family: Arial, sans-serif;
+                          ">DESCRIPTION_TEXT</p>
+                  <center>
+                    
+                  </center>
+                  <p style="
+                            margin: 30px 0 0px 0;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-family: Arial, sans-serif;
+                          ">
+                    ,Best regards<br>
+                    .Zerli, G16
+                  </p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; background: #69b33d">
+            <div style="width: 50%;">
+                  </div><div style="width: 25%">
+                  </div><table style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 0;
+                    border-spacing: 0;
+                    font-size: 9px;
+                    font-family: Arial, sans-serif;
+                  " role="presentation">
+              <tbody>
+              <tr>
+                <td style="padding: 0 0 0 10px; width: 38px">
+                    <a style="color: #ffffff" href="http://www.twitter.com/"><img style="
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                " src="https://assets.codepen.io/210284/tw_1.png" alt="Twitter" width="38"></a>
+                  </td>
+                  <td style="padding: 0 0 0 10px;">
+                    <a style="color: #ffffff" href="http://www.facebook.com/"><img style="
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                " src="https://assets.codepen.io/210284/fb_1.png" alt="Facebook" width="38"></a>
+                  </td>
+                
+                <td style="padding: 0; width: 30%" align="right">
+                    <p style="
+                              margin: 0;
+                              font-size: 14px;
+                              line-height: 16px;
+                              font-family: Arial, sans-serif;
+                              color: #ffffff;
+                            ">
+                      ® Zerli, Group 16, 2022
+                    </p>
+                  </td>
+                
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>

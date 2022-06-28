@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="server-client (NO UI)" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
+    <runConfiguration name="ZerliServerUI (NO UI)" type="Application" />
+    <runConfiguration name="ZerliClientUI" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

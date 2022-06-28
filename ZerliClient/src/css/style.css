@@ -1,0 +1,118 @@
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ Buttons @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.loginbutton {
+	-fx-background-color: #1e824c;
+	-fx-background-radius: 20;
+}
+
+.loginbutton:hover {
+	-fx-background-color: #135230;
+	-fx-background-radius: 20;
+}
+
+.loginbutton:pressed {
+ 	-fx-background-color: #135230;
+ 	 box-shadow: "0 5px #666";
+  	-fx-translate-y: 4px;
+}
+
+.logoutbutton {
+	-fx-background-color: #59614E;
+	-fx-background-radius: 20;
+}
+
+.logoutbutton:hover {
+	-fx-background-color: #464D3D;
+	-fx-background-radius: 20;
+}
+
+.logoutbutton:pressed {
+ 	-fx-background-color: #464D3D;
+ 	 box-shadow: "0 5px #666";
+  	-fx-translate-y: 4px;
+}
+
+.surveybutton {
+	-fx-background-color: #1e824c;
+	-fx-background-radius: 0;
+}
+.surveybutton:hover {
+	-fx-background-color: #135230;
+	-fx-background-radius: 0;
+}
+.surveybutton:selected {
+ 	-fx-background-color: #135230;
+    -fx-background-radius: 0;
+}
+.surveybutton:focused {
+ 	-fx-background-color: #135230;
+    -fx-background-radius: 0;
+}
+
+.serverButton{
+	-fx-background-color: #1e824c;
+	-fx-background-radius: 20;
+}
+.serverButton:hover {
+	-fx-background-color: #135230;
+	-fx-background-radius: 20;
+}
+
+.serverButton:pressed {
+ 	-fx-background-color: #135230;
+ 	 box-shadow: "0 5px #666";
+  	-fx-translate-y: 4px;
+}
+
+.catalogItem{
+    -fx-background-color: #97C77B;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10, 0 , 0, 10);
+}
+.catalogItem:hover{
+    -fx-background-color: #90BE75;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10, 0 , 0, 10);
+}
+.catalogItem:pressed {
+    -fx-background-color: #607E4E;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10, 0 , 0, 10);
+}
+
+	
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ Background @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.transparent{
+	-fx-background-color: transparent;
+}
+
+.backgroundColorHeader{
+	-fx-background-color: #69B33D;
+}
+
+.backgroundColorLight{
+     -fx-background-color: #97C77B;
+}
+
+
+.mouse-moved:hover{
+    -fx-background-color: #90BE75;
+}
+
+.mouse-moved:pressed{
+    -fx-background-color : #607E4E;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0),10, 0, 0, 10);
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ TextField @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.centeredTextArea .scroll-pane .content .text {
+    -fx-text-alignment: center;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ Text @@@@@@@@@@@@@@@@@@@@@@@@@@ */

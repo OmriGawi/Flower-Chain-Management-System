@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fx:id="pane" prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.customer_service_worker.CustomerServiceWorkerTreatComplaintScreenFXController">
+   <children>
+      <Label layoutX="316.0" layoutY="25.0" text="View Complaint" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Text fx:id="clientNumberText" layoutX="192.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="123456" textAlignment="CENTER" wrappingWidth="89.671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeComplaintButton" layoutX="328.0" layoutY="506.0" mnemonicParsing="false" onAction="#onButtonPressCloseComplaint" prefHeight="39.0" prefWidth="172.0" styleClass="loginbutton" stylesheets="@../../css/style.css" text="Close complaint" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="amountOfRefundText" layoutX="98.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of refund to customer :">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="refundAmountTextField" layoutX="292.0" layoutY="401.0" promptText="0" style="-fx-background-color: transparent; -fx-border-color: #AFDD93; -fx-border-width: 0px 0px 2px 0px;" />
+      <Text layoutX="97.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number:">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="97.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Complaint :">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="complaintContentTextField" editable="false" layoutX="97.0" layoutY="173.0" prefHeight="167.0" prefWidth="637.0" />
+      <Text fx:id="refundErrorText" fill="#eb5234" layoutX="292.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="invalid" textAlignment="CENTER" visible="false" wrappingWidth="148.5078125" />
+      <Text fx:id="complaintStatusText" fill="#399400" layoutX="307.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #399400;" text="valid" textAlignment="CENTER" visible="false" wrappingWidth="212.5078125" />
+   </children>
+</fx:root>

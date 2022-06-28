@@ -1,0 +1,53 @@
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ Buttons @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+.loginbutton {
+	-fx-background-color: #87cc5e;
+	-fx-background-radius: 20;
+}
+
+.loginbutton:hover {
+	-fx-background-color: #69B33D;
+	-fx-background-radius: 20;
+}
+
+.loginbutton:pressed {
+	-fx-background-color: #478b1f;
+	-fx-background-radius: 20;
+}
+
+
+
+
+.serverButton{
+	-fx-background-color: #1e824c;
+	-fx-background-radius: 20;
+}
+.serverButton:hover {
+	-fx-background-color: #135230;
+	-fx-background-radius: 20;
+}
+
+.serverButton:pressed {
+ 	-fx-background-color: #135230;
+ 	 box-shadow: "0 5px #666";
+  	-fx-translate-y: 4px;
+}
+
+
+	
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ Backgrounnd @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.backgroundColor{
+	-fx-background-color: #69B33D;
+}
+
+.transparent{
+	-fx-background-color: transparent;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ TextField @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.centeredTextArea .scroll-pane .content .text {
+    -fx-text-alignment: center;
+}

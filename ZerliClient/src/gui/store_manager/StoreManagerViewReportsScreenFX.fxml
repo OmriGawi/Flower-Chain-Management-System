@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.store_manager.StoreManagerViewReportsScreenFXController">
+   <children>
+      <Label layoutX="317.0" layoutY="14.0" text="View Reports " underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="42.0" layoutY="93.0" prefHeight="243.0" prefWidth="699.0">
+         <children>
+            <ComboBox fx:id="reportTypeComboBox" layoutX="169.0" layoutY="1.0" prefWidth="150.0" promptText="Select Report" />
+            <Pane layoutX="169.0" layoutY="107.0">
+               <children>
+                  <ComboBox fx:id="monthComboBox" layoutY="36.0" prefWidth="150.0" promptText="Month" />
+                  <ComboBox fx:id="quarterlyYearComboBox" disable="true" layoutX="262.0" layoutY="79.0" prefWidth="150.0" promptText="Year" />
+                  <RadioButton fx:id="monthlyReportRadioButton" mnemonicParsing="false" onMouseClicked="#onMouseClickMonthlyReportRadioButton" selected="true" text="Monthly Report">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="quarterlyReportRadioButton" layoutX="270.0" mnemonicParsing="false" onMouseClicked="#onMouseClickQuarterlyReportRadioButton" text="Quarterly Report">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <ComboBox fx:id="quarterComboBox" disable="true" layoutX="262.0" layoutY="36.0" prefWidth="150.0" promptText="Quarter" />
+                  <ComboBox fx:id="monthlyYearComboBox" layoutY="79.0" prefWidth="150.0" promptText="Year" />
+               </children>
+            </Pane>
+            <Label prefHeight="26.0" prefWidth="115.0" text="Select report type: ">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="104.0" prefHeight="26.0" prefWidth="150.0" text="Select report duration:">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutX="143.0" layoutY="552.0" prefHeight="101.0" prefWidth="521.0" spacing="10.0">
+         <children>
+            <Button fx:id="showReportButton" mnemonicParsing="false" onAction="#onButtonPressShowReport" prefHeight="41.0" prefWidth="155.0" styleClass="loginbutton" stylesheets="@../../css/style.css" text="Show Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Text fx:id="successText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="503.44677734375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="errorText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="500.44677734375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Text fill="RED" layoutX="29.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="11.13671875">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="29.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="11.13671875">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>

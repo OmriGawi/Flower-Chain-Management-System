@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onMouseClickedSaleItem" onMouseEntered="#onMouseEnteredSaleItem" onMouseExited="#onMouseExitedSaleItem" prefHeight="113.0" prefWidth="276.0" spacing="15.0" style="-fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.client.ItemSaleFXController">
+   <children>
+      <ImageView fx:id="itemImage" fitHeight="90.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/flowers/flower.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="185.0" prefWidth="241.0">
+         <children>
+            <Label fx:id="itemNameLabel" alignment="CENTER" prefHeight="46.0" prefWidth="241.0" text="Teleflora's Amethyst ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="177.0">
+               <children>
+                  <Text fx:id="itemPriceWithoutDiscountLabel1" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="32.13671875">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="itemPriceWithoutDiscountLabel" strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="40.13671875">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="itemPriceAfterDiscountLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="98.13671875">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Text fx:id="amountText" strokeType="OUTSIDE" strokeWidth="0.0" text="1 selected" visible="false" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="15.0" />
+   </padding>
+</HBox>

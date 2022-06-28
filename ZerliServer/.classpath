@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="image/|image/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql-connector-java-8.0.13"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/activation"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mail"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/c3p0-0.9.5.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j-1.2.16"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/quartz-2.4.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/quartz-jobs-2.4.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/slf4j-api-1.7.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/slf4j-log4j12-1.7.7"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

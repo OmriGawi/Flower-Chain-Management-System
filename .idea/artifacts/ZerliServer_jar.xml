@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ZerliServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ZerliServer_jar</output-path>
+    <root id="archive" name="ZerliServer.jar">
+      <element id="module-output" name="ZerliServer" />
+      <element id="module-output" name="Common" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/slf4j-log4j12-1.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/quartz-jobs-2.4.0-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/mysql-connector-java-8.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/c3p0-0.9.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/log4j-1.2.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/quartz-2.4.0-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/slf4j-api-1.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/ZerliServer/lib/activation.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

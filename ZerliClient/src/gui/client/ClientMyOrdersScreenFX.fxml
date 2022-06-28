@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.client.ClientMyOrdersScreenFXController">
+   <children>
+      <TableView fx:id="orderTableView" layoutX="4.0" layoutY="65.0" onMouseClicked="#onMouseDoubleClickTableRow" prefHeight="374.0" prefWidth="819.0" styleClass="transparent" stylesheets="@../../css/style.css">
+        <columns>
+          <TableColumn fx:id="orderNumberCol" prefWidth="128.0" style="-fx-alignment: CENTER;" text="Order Number" />
+          <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="194.0" style="-fx-alignment: CENTER;" text="Date" />
+            <TableColumn fx:id="totalPriceCol" prefWidth="150.0" style="-fx-alignment: CENTER;" text="Total Price" />
+            <TableColumn fx:id="storeCol" minWidth="0.0" prefWidth="133.0" style="-fx-alignment: CENTER;" text="Store" />
+            <TableColumn fx:id="statusCol" minWidth="0.0" prefWidth="213.0" style="-fx-alignment: CENTER;" text="Status" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" layoutX="184.0" layoutY="464.0" prefHeight="55.0" prefWidth="459.0" spacing="25.0">
+         <children>
+                  <Button fx:id="removeOrderButton" mnemonicParsing="false" onAction="#onButtonPressRemoveOrder" prefHeight="39.0" prefWidth="189.0" styleClass="loginbutton" stylesheets="@../../css/style.css" text="Cancel Order" textFill="WHITE">
+                      <font>
+                          <Font name="System Bold Italic" size="18.0" />
+                      </font>
+                  </Button>
+            <Text fx:id="removeOrderText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="433.31640625">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Label layoutX="349.0" layoutY="14.0" text="My Orders" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Text fill="RED" layoutX="14.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Double click an order to view details" wrappingWidth="269.13671875">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Information :" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <VBox layoutX="14.0" layoutY="610.9716796875" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cancellation of an order 3+ hours before the supply date will be credited with 100% of the total price." wrappingWidth="794.408203125">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cancellation of an order between 1-3 hours before the supply date will be credited with 50% of the total price." wrappingWidth="800.408203125">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cancellation of an order between 0-1 hours before the supply date will be charged with full of total price." wrappingWidth="800.408203125">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="827.0" type="Pane" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="gui.report.income.IncomeQuarterlyTwoStoresScreenFXController">
+    <children>
+        <Label layoutX="322.0" layoutY="14.0" text="Income Report" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="27.0" />
+            </font>
+        </Label>
+        <BarChart fx:id="barChart1" layoutY="84.0" prefHeight="284.0" prefWidth="689.0">
+            <xAxis>
+                <CategoryAxis label="Month" side="BOTTOM" fx:id="xAxis1" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis1" label="Revenue in Shekels" minorTickCount="3" side="LEFT" tickLabelGap="15.0">
+                    <tickLabelFont>
+                        <Font name="System Bold Italic" size="13.0" />
+                    </tickLabelFont></NumberAxis>
+            </yAxis>
+        </BarChart>
+        <Label fx:id="quarterLabel1" layoutX="764.0" layoutY="209.0" text="Quarter">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="689.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarter:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="689.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="yearLabel1" layoutX="764.0" layoutY="242.0" text="Year">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <Text layoutX="689.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Label fx:id="storeIdLabel1" layoutX="764.0" layoutY="175.0" text="ID">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+      <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store 1:" underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="414.0" layoutX="392.0" layoutY="369.0" startX="-378.0" />
+      <BarChart fx:id="barChart2" layoutX="5.0" layoutY="420.0" prefHeight="284.0" prefWidth="689.0">
+         <xAxis>
+            <CategoryAxis label="Month" side="BOTTOM" fx:id="xAxis2" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis2" label="Revenue in Shekels" minorTickCount="3" side="LEFT" tickLabelGap="15.0">
+               <tickLabelFont>
+                  <Font name="System Bold Italic" size="13.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </BarChart>
+      <Label fx:id="quarterLabel2" layoutX="769.0" layoutY="545.0" text="Quarter">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="694.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarter:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="694.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="yearLabel2" layoutX="769.0" layoutY="578.0" text="Year">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="694.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="storeIdLabel2" layoutX="769.0" layoutY="511.0" text="ID">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="19.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store 2:" underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+    </children>
+</fx:root>

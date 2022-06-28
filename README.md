@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/OmriGawi/Flower-Chain-Management-System">
-    <img src="images/ZerliLogo.png" alt="Logo" width="80" height="80">
+    <img src="images/ZerliLogo.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Zerli - A Flower Chain Management System</h3>

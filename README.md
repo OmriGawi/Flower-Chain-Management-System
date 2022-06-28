@@ -131,7 +131,7 @@ Feel free to check any of them, they are unique!
 **Server GUI:**
     ![ServerGUI](images/Server.jpg)
 
-**Login:**
+**Login:** <br/>
    ![Login](images/ClientLogin.jpg)
 
 **Here is the catalog, also a custom item can be added by the user**

@@ -111,6 +111,9 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 Here is a list of users with a different type of functionality:<br/>
+Feel free to check any of them, they are unique!
+
+
 | User Type                | Username | Password |
 |--------------------------|----------|----------|
 | Client                   | client   | client   |
@@ -122,8 +125,22 @@ Here is a list of users with a different type of functionality:<br/>
 | Store Worker             | sw       | sw       |
 | Service Expert           | se       | se       |
 
+**A little peek at how the project looks like, of course it contains a lot more functionality!**
 
 
+**Server GUI:**
+    ![ServerGUI](images/Server.jpg)
+
+**Login:**
+   ![Login](images/ClientLogin.jpg)
+
+**Here is the catalog, also a custom item can be added by the user**
+   ![Catalog](images/Catalog.jpg)
+
+**Auto generated reports (Income, Orders, Complaints) each month/quarter.**<br/>
+**Used Quartz-Scheduler for implementation**
+
+   ![reports](images/Ceo_View_Reports.jpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -144,7 +161,15 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Collaborators -->
+## Collaborators
+* [Ofek Cohen](https://github.com/ofekocohen)
+* [Yuval Markin](https://github.com/markinYuval)
+* [Tal Cohen](https://github.com/Talco860)
+* [Koral Ben David](https://github.com/koral62168)
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -172,4 +197,3 @@ Project Link: [https://github.com/OmriGawi/Flower-Chain-Management-System](https
 [license-url]: https://github.com/OmriGawi/Flower-Chain-Management-System/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/omrigawi
-[product-screenshot]:

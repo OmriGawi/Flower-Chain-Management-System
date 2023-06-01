@@ -136,7 +136,7 @@ Feel free to check any of them, they are unique!
 * **Service Expert:** Add conclusions to the surveys.
 
 ## Database Structure
-    ![database](images/database.jpg)
+![Database](images/database.jpg)
 
 **A little peek at how the project looks like, of course it contains a lot more functionality!**
 

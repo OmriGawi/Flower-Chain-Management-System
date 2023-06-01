@@ -125,6 +125,16 @@ Feel free to check any of them, they are unique!
 | Store Worker             | sw       | sw       |
 | Service Expert           | se       | se       |
 
+## Functionallity
+* **Client:** Create new orders
+* **Company Marketing Worker:** Edit catalog, Add new items, Remove items, Enable or Disable sales.
+* **Ceo:** View reports on all stores.
+* **Customer Service Worker:** Add new complaints, View complaints.
+* **Store Manager:** Approve & Cancel orders, View reports, Set permisions to users.
+* **Delivery Man:** Confirm arrival of oders to the destination.
+* **Store Worker:** Add Surveys
+* **Service Expert:** Add conclusions to the surveys.
+
 **A little peek at how the project looks like, of course it contains a lot more functionality!**
 
 
